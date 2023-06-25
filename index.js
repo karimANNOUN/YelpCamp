@@ -56,7 +56,7 @@ app.engine('ejs',ejsMate);
 const sessionConfig={
    //name:'blah', // wela nbdlou ism session ti3na ken esmha par default ana glebneh hna blah 
    store: MongoStore.create({ 
-      mongoUrl:process.env.DB_URL,
+      mongoUrl:`${process.env.DB_URL}`,
       secret:`${process.env.SECRET_SESSION}`,
       // touchAfter: 24 * 3600 
       // using mongo for your session store
