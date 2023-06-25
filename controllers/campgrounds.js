@@ -1,7 +1,7 @@
 const Campground=require('../models/campground');
 const {cloudinary}=require('../cloudinary/index');
 const mbxGeocoding=require('@mapbox/mapbox-sdk/services/geocoding');
-const mapBoxToken= `${process.env.MAPBOX_TOKEN}`;   // hadou fi 3 tab3in map kifeh ndirouha f website ti3na
+const mapBoxToken= "pk.eyJ1Ijoia2ltb3UyMyIsImEiOiJjbGZ0OHlzZncwZHRlM2RuemV5ODJtNmY3In0.mDGy4aI_srwsPpWaXsNJSQ";   // hadou fi 3 tab3in map kifeh ndirouha f website ti3na
 const geocoder= mbxGeocoding({ accessToken:mapBoxToken});
 
 
