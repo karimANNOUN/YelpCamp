@@ -2,14 +2,14 @@
 <link  rel="stylesheet" href="/stylesheets/stars.css">
 
 <div class="row">
-  <div class="col-6">
-    <div id="campgroundcarousel" class="carousel slide">
-      <div class="carousel-inner">
+  <div class="col-6 h-75">
+    <div id="campgroundcarousel" class="carousel slide ">
+      <div class="carousel-inner ">
         
 
         <% campground.images.forEach((img, i)=>{ %>
         <div class="carousel-item <%= i === 0 ? 'active' : '' %>">
-          <img src="<%= img.url %>" class="d-block w-100" alt="">
+          <img src="<%= img.url %>" class="d-block  w-100" alt="">
         </div>
         <%})%>
         <!-- hadi dernaha bah nmchiw les images kifkif mahma ykoun number ti3hm-->
