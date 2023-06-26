@@ -32,7 +32,7 @@ const ReviewRoutes=require('./routes/reviews');
 const MongoStore = require('connect-mongo');// using mongo for your session store
 
 
-mongoose.connect("mongodb+srv://karimannoun:uXF7POzPolC2SSJC@cluster0.htyy4ew.mongodb.net/?retryWrites=true&w=majority",{useNewUrlParser:true , useUnifiedTopology:true})
+mongoose.connect(`${process.env.DB_URL}`,{useNewUrlParser:true , useUnifiedTopology:true})
 .then(()=>{
    console.log("that's run good")
 })
